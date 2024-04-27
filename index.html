@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomenclatura</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <h1>NOMENCLATURA CSS</h1>
+
+    <a href="#" class="button">
+        BEM
+    </a>
+
+    <a href="#" class="button button__transparent">
+        SUIT
+    </a>
+
+
+    <section class="section">
+        <h2 class="section__title">* ¿Qué es BEM?</h2>
+        <p class="section__paragraph">
+            Es una metodología de nomenclatura y estructura de código CSS que proporciona una forma de escribir
+            nombres de clases de CSS.
+            Ayuda a reutilizar estilos, facilita el mantenimiento y hace que los estilos sean más escalables en
+            proyectos web.Esta metodología tiene un enfoque basado en componentes para el desarrollo web.
+            Básicamente, se trata de dividir en bloques independientes cada subdivisión de nuestro layout.</p> <br>
+
+        <div class="image">
+
+            <img src="./imgs/imgBEM.png" alt="Imagen de bloque">
+        </div>
+
+
+    </section>
+
+    <section>
+        <h2 class="section__title">* ¿Cómo funciona?</h2>
+        <p class="section__paragraph">
+            BEM se caracteriza por solo utilizar clases (y no nombre de etiquetas), nombra las clases
+            mediante el
+            siguiente patrón:
+        <p class="section__paragraph section__paragraph--bold">.bloque__elemento—modificador </p>
+
+        <p class="List"> BEM son tres siglas:</p>
+        <ul>
+
+            <li class="List-item">B de bloque: Bloque es una sección independiente que tiene significado propio por sí
+                solo. Contiene todos los nodos HTML de una estructura a la que te estés refiriendo.</li><br>
+            <li class="List-item">E de elemento: Un elemento son porciones más pequeñas internas a un bloque. Se usa
+                para ir dividiendo el bloque en segmentos más pequeños.</li><br>
+            <li class="List-isliked">M de modificador: Un modificador sirve para modificar algunas propiedades de un
+                bloque o elemento.</li><br>
+        </ul>
+
+        <section>
+            <h2 class=" section__title">* Ventajas de BEM:</h2>
+            <ul>
+
+                <li class="List-item">Claridad: Las clases siguen una convención predecible y descriptiva, lo que hace
+                    que
+                    el código sea más
+                    fácil de entender y mantener.</li><br>
+                <li class="List-item">Reutilización: Los bloques y elementos pueden reutilizarse fácilmente en
+                    diferentes
+                    partes del sitio
+                    web.</li><br>
+                <li class="List-item">Estructura modular: Fomenta la creación de componentes CSS independientes y
+                    modulares,
+                    lo que facilita
+                    la construcción y gestión de interfaces complejas.</li><br>
+                <li class="List-item">Especificidad controlada: Reduce la necesidad de usar selectores de CSS altamente
+                    específicos, lo que
+                    ayuda a prevenir problemas de cascada y sobrescritura no deseada de estilos.</li>
+            </ul>
+        </section>
+
+
+        <div>
+            <section>
+                <h2 class="section__title">* Conclusión:</h2>
+                <p class="section__paragraph">La metodología BEM nos abre un sin fin de posibilidades para nombrar
+                    clases de
+                    una manera consecuente y
+                    ordenada. Además, debido a su combinación de palabras, también nos proveerá de clases con más
+                    especificidad si es que además combinamos selectores en el css.
+                </p>
+            </section>
+
+
+<section>
+        </div>
+        <h2 class="section__title">¿Qué es SUIT?</h2>
+        <p class="section__paragraph">SUIT comprende Utilidades y Componentes. Dentro de los componentes puede haber
+            modificadores, descendientes y estados. <br>
+            SUIT utiliza una combinación de la notación de Pascal (PascalCase), Mayúsculas y minúsculas(camelCase) y
+            guiones. Sus convenciones imponen un límite en el número a veces confuso de guiones y guiones bajos que
+            pueden aparecer en BEM. <br></p>
+
+        <p class="section__paragraph--bold">Por ejemplo: la clase BEM .search-form__text-field sería
+            .SearchForm-textField en SUIT.</p>
+
+        <h3 class="section__subtitle"> Utilidad</h3>
+        <p class="section__paragraph">Las utilidades manejan la estructura y el estilo posicional, y están escritas de
+            tal manera que se pueden
+            aplicar en cualquier parte de un componente. Tienen el prefijo u- y están escritos en mayúsculas y
+            minúsculas.</p>
+        <p class="section__paragraph--bold">Por ejemplo: .u-clearFix.</p>
+
+        <h3 class="section__subtitle">Componente</h3>
+        <p class="section__paragraph">Un componente en SUIT ocupa el lugar de un bloque en BEM. Los componentes siempre
+            están escritos en mayúsculas
+            y minúsculas y son solo una parte de SUIT que usa mayúsculas y minúsculas, lo que los hace fáciles de
+            identificar.</p>
+        <p class="section__paragraph--bold">Por ejemplo: .SearchForm.</p>
+
+        <h3 class="section__subtitle">Espacio de nombres de componentes</h3>
+        <p class="section__paragraph">Opcionalmente, los componentes pueden tener un prefijo con un espacio de nombres y
+            un solo guión nmsp- para
+            garantizar que se eviten conflictos.</p>
+        <p class="section__paragraph--bold">Por ejemplo .mine-SearchForm.</p>
+
+        <h3 class="section__subtitle">Descendiente</h3>
+        <p class="section__paragraph">Un descendiente en SUIT reemplaza un elemento en BEM. Utiliza un solo guión - y
+            está escrito en mayúsculas y
+            minúsculas.</p>
+        <p class="section__paragraph--bold">Por ejemplo .SearchForm-header, .SearchForm-textField y
+            .SearchForm-submitButto.</p>
+
+        <h3 class="section__subtitle">Modificador</h3>
+        <p class="section__paragraph">SUIT usa modificadores al igual que BEM, sin embargo, su función está más
+            estrictamente controlada. Un
+            modificador SUIT generalmente solo se aplica directamente a un componente, no a un descendiente. Tampoco
+            debe
+            usarse para representar cambios de estado, ya que SUIT tiene una convención de nomenclatura dedicada para
+            los
+            estados.
+            Los modificadores están escritos en mayúsculas y minúsculas y están precedidos por dos guiones --. </p>
+        <p class="section__paragraph--bold">Por ejemplo, .SearchForm--advanced.</p>
+
+        <h3 class="section__subtitle">Estado</h3>
+        <p class="section__paragraph">Las clases de estado se pueden usar para reflejar los cambios en el estado de un
+            componente. Esto les permite
+            diferenciarse claramente de los modificadores, que reflejan la modificación de la apariencia base de un
+            componente independientemente del estado. Si es necesario, también se puede aplicar un estado a un
+            descendiente.</p>
+
+        <p class="section__paragraph">Los estados tienen el prefijo is- y están escritos en mayúsculas y minúsculas.
+            También siempre se
+            escriben como clases contiguas.</p>
+
+        <p class="section__paragraph--bold">Por ejemplo .SearchForm.is-invalid.</p>
+
+</section>
+
+</body>
+
+</html>
