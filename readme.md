@@ -18,7 +18,7 @@
 
 
 
-## SUITCASE
+## SUITCSS
 
 ```
 .MyComponent {...}
