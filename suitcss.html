@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUITCSS</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    
+        <h2>¿Qué es SUIT?</h2>
+        <p>SUIT comprende Utilidades y Componentes. Dentro de los componentes puede haber
+            modificadores, descendientes y estados. <br>
+            SUIT utiliza una combinación de la notación de Pascal (PascalCase), Mayúsculas y minúsculas(camelCase) y
+            guiones. Sus convenciones imponen un límite en el número a veces confuso de guiones y guiones bajos que
+            pueden aparecer en BEM. <br></p>
+
+        <span>Por ejemplo: la clase BEM .search-form__text-field sería
+            .SearchForm-textField en SUIT. </span>
+
+        <h3>Utilidad</h3>
+        <p>Las utilidades manejan la estructura y el estilo posicional, y están escritas de
+            tal manera que se pueden
+            aplicar en cualquier parte de un componente. Tienen el prefijo u- y están escritos en mayúsculas y
+            minúsculas.</p>
+        <span>Por ejemplo: .u-clearFix.</span>
+
+        <h3>Componente</h3>
+        <p>Un componente en SUIT ocupa el lugar de un bloque en BEM. Los componentes siempre
+            están escritos en mayúsculas
+            y minúsculas y son solo una parte de SUIT que usa mayúsculas y minúsculas, lo que los hace fáciles de
+            identificar.</p>
+        <span>Por ejemplo: .SearchForm.</span>
+
+        <h3>Espacio de nombres de componentes</h3>
+        <p>Opcionalmente, los componentes pueden tener un prefijo con un espacio de nombres y
+            un solo guión nmsp- para
+            garantizar que se eviten conflictos.</p>
+        <span>Por ejemplo: .mine-SearchForm.</span>
+
+        <h3>Descendiente</h3>
+        <p>Un descendiente en SUIT reemplaza un elemento en BEM. Utiliza un solo guión - y
+            está escrito en mayúsculas y
+            minúsculas.</p>
+        <span>Por ejemplo .SearchForm-header, .SearchForm-textField y
+            .SearchForm-submitButto.</span>
+
+        <h3>Modificador</h3>
+        <p>SUIT usa modificadores al igual que BEM, sin embargo, su función está más
+            estrictamente controlada. Un
+            modificador SUIT generalmente solo se aplica directamente a un componente, no a un descendiente. Tampoco
+            debe
+            usarse para representar cambios de estado, ya que SUIT tiene una convención de nomenclatura dedicada para
+            los
+            estados.
+            Los modificadores están escritos en mayúsculas y minúsculas y están precedidos por dos guiones --. </p>
+        <span>Por ejemplo, .SearchForm--advanced.</span>
+
+        <h3>Estado</h3>
+        <p>Las clases de estado se pueden usar para reflejar los cambios en el estado de un
+            componente. Esto les permite
+            diferenciarse claramente de los modificadores, que reflejan la modificación de la apariencia base de un
+            componente independientemente del estado. Si es necesario, también se puede aplicar un estado a un
+            descendiente. <br>
+
+            Los estados tienen el prefijo is- y están escritos en mayúsculas y minúsculas.
+            También siempre se
+            escriben como clases contiguas.</p>
+
+        <span>Por ejemplo .SearchForm.is-invalid.</span>
+
+   
+
+</body>
+
+</html>
